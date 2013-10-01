@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-	8"?>
+<cml>
+	
+	<RenderKit>
+		<Renderer id="hotspots" dataPath="planets/planets.cml">
+
+			<Hotspot id="{label}" class="{hotspot-class}" x="{x}" y="{y}" component="{link}" visible="true" tether="true" tetherColor="{tether-color}">		
+				<Button dispatch="down:hotspot" hit="img" initial="graphic" down="graphic" up="graphic" out="graphic">	
+					<Image id="graphic" src="{graphic}" />
+				</Button>
+			</Hotspot>
+		
+		</Renderer>
+	</RenderKit>
+
+</cml>
+
+
+

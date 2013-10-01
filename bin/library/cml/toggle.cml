@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-	8"?>
+<cml>
+
+<RadioButtons id="radioBtns" pageButtons="false" graphicReps="parks-up:parks-down,mon-up:mon-down,other-up:other-down" labels="parks,monuments,other" fontSize="23" fontAlpha="0" verticalLayout="false" absOffset="true" >
+	<Image id="parks-up" x="1078" y="1018" src="library/assets/parks-up.png"/>
+	<Image id="mon-up" x="1445" y="1018" src="library/assets/monuments-up.png"/>
+	<Image id="other-up" x="1759" y="1018" src="library/assets/other-up.png"/>	
+	<Image id="parks-down" x="1078" y="1018" src="library/assets/parks-down.png"/>
+	<Image id="mon-down" x="1445" y="1018" src="library/assets/monuments-down.png"/>
+	<Image id="other-down" x="1759" y="1018" src="library/assets/other-down.png"/>	
+</RadioButtons>
+
+</cml>
+
+
+

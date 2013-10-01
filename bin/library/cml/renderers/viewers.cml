@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-	8"?>
+<cml>
+
+	<RenderKit>
+		<Renderer id="viewers" dataPath="planets/viewers.cml">
+
+			<SlideshowViewer id="{id}" x="{x}" y="{y}" front="front" mouseChildren="true" linkSlideshows="true" autoTextLayout="false" visible="false">
+				
+				<Graphic targetParent="true" shape="rectangle" width="700" height="480" lineStroke="0" fill="color" color="0x000000">
+					<Text width="200" x="20" y="20" font="OpenSansRegular" fontSize="30" color="0xffffff" text="{title}" />
+				</Graphic>
+								
+				<Graphic shape="rectangle" width="660" height="340" x="20" y="80" lineStroke="0" alpha="1" fill="color" color="{bg-color}" targetParent="true" mouseChildren="false">
+					<Slideshow x="{slideshow-x}" y="{slideshow-y}" id="front" loop="true" fadeDuration="1000" rate="2000" autoplay="false">
+						<Container id="slide-1" x="20" y="20">
+							<Image src="{slide-1-graphic}" width="300" x="0" y="0" />
+							<Text multiline="true" wordWrap="true" width="300" height="400" x="320" y="0" font="OpenSansRegular" fontSize="15" color="0xffffff">{slide-1-text}</Text>
+						</Container>
+						<Container id="slide-2" x="20" y="20">
+							<Image src="{slide-2-graphic}" width="300" />
+							<Text multiline="true" wordWrap="true" width="300" height="400" x="320" y="0" font="OpenSansRegular" fontSize="15" color="0xffffff">{slide-2-text}</Text>
+						</Container>
+						<Container id="slide-3" x="20" y="20">
+							<Image src="{slide-3-graphic}" width="300" />
+							<Text multiline="true" wordWrap="true" width="300" height="400" x="320" y="0" font="OpenSansRegular" fontSize="15" color="0xffffff">{slide-3-text}</Text>
+						</Container>
+						<Container id="slide-4" x="20" y="20">
+							<Image src="{slide-4-graphic}" width="300" />
+							<Text multiline="true" wordWrap="true" width="300" height="400" x="320" y="0" font="OpenSansRegular" fontSize="15" color="0xffffff">{slide-4-text}</Text>
+						</Container>
+					</Slideshow>					
+				</Graphic>
+				
+				<RadioButtons x="20" y="440" id="page-buttons" pageButtons="true" labels="" absOffset="true" horizontalOffset="10" verticalLayout="false"
+				selectedColor="0xffffff" selectedFillRatio="1" fontAlpha="0" fontSize="23" alpha="0.2"/>
+				
+				
+				<Gesture ref="n-drag" gestureOn="true"/>
+				<Gesture ref="n-scale" gestureOn="true"/>
+				<Gesture ref="n-rotate" gestureOn="true"/>
+				<Include src="library/cml/buttons/closeButton.cml"/>
+			</SlideshowViewer>				
+		
+		</Renderer>
+	</RenderKit>
+
+</cml>
+
+
+
