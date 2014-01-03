@@ -4,15 +4,15 @@
 	<StageKit fullscreen="true" />
 	
 	<!-- Attract Screen -->
-	<AttractKit id="attract" timeout="5" tweenFades="true" tweenTime=".5" visible="true">
+	<Attract id="attract" timeout="5" tweenFades="true" tweenTime=".5" visible="true">
 		<Image src="library/assets/attract-screen.png" />
-	</AttractKit>	
+	</Attract>	
 	
 	<!-- Backgrounds -->
-	<BackgroundKit>
+	<Background>
 		<Video src="library/assets/stars.mp4" x="50" y="50" width="1920" height="1020" autoplay="true" loop="true"></Video>
 		<Image id="default-bg" src="library/assets/ss-background.png" visible="true"/>   
-	</BackgroundKit>
+	</Background>
 
 	
 	<!-- Marker Renderer -->

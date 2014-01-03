@@ -1,0 +1,15 @@
+.labels
+{ 
+	fontSize:24; 
+	font: MyriadProBold;
+	multiline:true; 
+	wordWrap:true;
+	leading: -2;
+	selectable:false;
+}
+
+.video
+{
+	width:1400;
+	height:1080;
+}
