@@ -1,3 +1,7 @@
 # Ignore Files
 
 obj/
+bin/*.swf
+bin/*.exe
+installer.nsi
+
