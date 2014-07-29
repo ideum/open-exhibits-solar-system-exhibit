@@ -13,7 +13,9 @@
 		<Video src="library/assets/stars.mp4" x="50" y="50" width="1920" height="1020" autoplay="true" loop="true"></Video>
 		<Image id="default-bg" src="library/assets/ss-background.png" visible="true"/>   
 	</Background>
-
+	
+	<!-- Accessibility Defaults -->
+	<Include src="library/cml/accessibility-defaults.cml"/>
 	
 	<!-- Marker Renderer -->
 	<Include src="library/cml/renderers/planets.cml"/>
