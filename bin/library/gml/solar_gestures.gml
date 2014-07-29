@@ -22,6 +22,12 @@
 						</returns>
 					</algorithm>
 				</analysis>	
+				<processing>
+					<boundary_filter>
+						   <property ref="dx" active="true" boundary_min="100" boundary_max="1720"/>
+						   <property ref="dy" active="true" boundary_min="100" boundary_max="880"/>
+					</boundary_filter>
+				</processing> 
 				<mapping>
 					<update dispatch_type="continuous">
 						<gesture_event  type="drag">
@@ -78,7 +84,13 @@
 							<property id="scale_dsy" result="ds"/>
 						</returns>
 					</algorithm>
-				</analysis>	
+				</analysis>
+				<processing>
+					<boundary_filter>
+						   <property ref="scale_dsx" active="true" boundary_min="0.5" boundary_max="2"/>
+						   <property ref="scale_dsy" active="true" boundary_min="0.5" boundary_max="2"/>
+					</boundary_filter>
+				</processing>
 				<mapping>
 					<update dispatch_type="continuous">
 						<gesture_event  type="scale">

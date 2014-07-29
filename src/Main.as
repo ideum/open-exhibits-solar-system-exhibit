@@ -13,7 +13,7 @@ package
 	
 	/**
 	 * OE Solar System Exhibit
-	 * @author Jenny
+	 * @author Ideum
 	 */
 	[SWF(width = "1920", height = "1080", backgroundColor = "0x000000", frameRate = "30")]
 

@@ -4,4 +4,4 @@ obj/
 bin/*.swf
 bin/*.exe
 installer.nsi
-
+lib/

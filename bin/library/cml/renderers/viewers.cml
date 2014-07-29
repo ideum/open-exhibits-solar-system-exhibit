@@ -4,7 +4,7 @@
 	<RenderKit>
 		<Renderer id="viewers" dataPath="planets/viewers.cml">
 
-			<SlideshowViewer id="{id}" x="{x}" y="{y}" front="front" mouseChildren="true" linkSlideshows="true" autoTextLayout="false" visible="false">
+			<SlideshowViewer id="{id}" x="{x}" y="{y}" front="front" mouseChildren="true" linkSlideshows="true" autoTextLayout="false" visible="false" affineTransform="true">
 				
 				<Graphic targetParent="true" shape="rectangle" width="700" height="480" lineStroke="0" fill="color" color="0x000000">
 					<Text width="200" x="20" y="20" font="OpenSansRegular" fontSize="30" color="0xffffff" text="{title}" />

@@ -4,7 +4,7 @@
 	<StageKit fullscreen="true" />
 	
 	<!-- Attract Screen -->
-	<Attract id="attract" timeout="5" tweenFades="true" tweenTime=".5" visible="true">
+	<Attract id="attract" timeout="120" tweenFades="true" tweenTime=".5" visible="true">
 		<Image src="library/assets/attract-screen.png" />
 	</Attract>	
 	
