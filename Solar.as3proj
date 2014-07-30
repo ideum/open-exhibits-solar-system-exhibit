@@ -17,7 +17,6 @@
   <classpaths>
     <class path="src" />
     <class path="..\gestureworks-flash-cml" />
-    <class path="..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -55,10 +54,10 @@
   <!-- SWC Libraries -->
   <libraryPaths>
     <element path="..\gestureworks-flash-cml\lib\cml_ext.swc" />
-    <element path="..\gestureworks-flash-gml\lib\gml_ext.swc" />
     <element path="..\gestureworks-flash-cml\lib\gui.swc" />
     <element path="..\gestureworks-flash-cml\lib\textLayout.swc" />
     <element path="..\gestureworks-flash-cml\lib\acc.swc" />
+    <element path="lib\GestureWorksGML_4.1.0.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
