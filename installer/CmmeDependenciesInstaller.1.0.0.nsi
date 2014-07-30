@@ -1,12 +1,11 @@
 ; The name of the project
 Name "CMME Accessibility Overlay Dependencies 1.0.0" 
 
-!define EXECUTABLE "CmmeDependenciesInstaller.1.0.0.exe" 
+;Name of the installer
+OutFile "CmmeDependenciesInstaller.1.0.0.exe"
+
 !define ORGANIZATION_NAME "CMME"
 !define BATSTARTUP "StartSapiServer.bat"
-
-;Name of the installer
-OutFile "CmmeDependenciesInstaller.exe"
 
 ; The default installation directory
 InstallDir $PROGRAMFILES32\${ORGANIZATION_NAME}
