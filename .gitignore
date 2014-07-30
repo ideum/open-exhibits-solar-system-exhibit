@@ -3,5 +3,7 @@
 obj/
 bin/*.swf
 bin/*.exe
-installer.nsi
+installer/Dependencies/*
+installer/SAPI-Server/*
+installer/*.exe
 lib/
