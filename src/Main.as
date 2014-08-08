@@ -1,7 +1,8 @@
 package 
 {
-	import com.gestureworks.cml.core.*;
+	import acc.*;
 	import com.gestureworks.cml.accessibility.*;
+	import com.gestureworks.cml.core.*;
 	import com.gestureworks.cml.elements.*;
 	import com.gestureworks.cml.events.*;
 	import com.gestureworks.cml.managers.*;
@@ -11,7 +12,6 @@ package
 	import flash.events.*;
 	import flash.text.*;
 	import flash.utils.*;
-	import acc.*;
 	
 	/**
 	 * OE Solar System Exhibit
@@ -41,8 +41,7 @@ package
 		{	
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			var solar_example:Solar = new Solar();
-			var accessibility:AccessibilityManager = new AccessibilityManager("accessibility-nav");
+			//var accessibility:AccessibilityManager = new AccessibilityManager("accessibility-nav");
 		}		
 
 	}
