@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cml>
+	
+	<Nav id="accessibility-nav" title="home-title" desc="home-description">
+		<Nav title="Earth" desc="earth-descr">
+				<Nav title="earth-1-descr" descr="earth-1-descr"/>
+				<Nav title="earth-2-descr" descr="earth-2-descr"/>
+				<Nav title="earth-3-descr" descr="earth-3-descr"/>
+				<Nav title="earth-4-descr" descr="earth-4-descr"/>
+		</Nav>
+		<Nav title="Mars" desc="mars-descr">
+				<Nav title="mars-1-descr" descr="mars-1-descr"/>
+				<Nav title="mars-2-descr" descr="mars-2-descr"/>
+				<Nav title="mars-3-descr" descr="mars-3-descr"/>
+				<Nav title="mars-4-descr" descr="mars-4-descr"/>
+		</Nav>
+		<Nav title="Sun" desc="sun-descr">
+				<Nav title="sun-1-descr" descr="sun-1-descr"/>
+				<Nav title="sun-2-descr" descr="sun-2-descr"/>
+				<Nav title="sun-3-descr" descr="sun-3-descr"/>
+				<Nav title="sun-4-descr" descr="sun-4-descr"/>
+		</Nav>
+		<Nav title="Mercury" desc="mercury-descr">
+				<Nav title="mercury-1-descr" descr="mercury-1-descr"/>
+				<Nav title="mercury-2-descr" descr="mercury-2-descr"/>
+				<Nav title="mercury-3-descr" descr="mercury-3-descr"/>
+				<Nav title="mercury-4-descr" descr="mercury-4-descr"/>
+		</Nav>
+		<Nav title="Venus" desc="venus-descr">
+				<Nav title="venus-1-descr" descr="venus-1-descr"/>
+				<Nav title="venus-2-descr" descr="venus-2-descr"/>
+				<Nav title="venus-3-descr" descr="venus-3-descr"/>
+				<Nav title="venus-4-descr" descr="venus-4-descr"/>
+		</Nav>
+		<Nav title="Jupiter" desc="jupiter-descr">
+				<Nav title="jupiter-1-descr" descr="jupiter-1-descr"/>
+				<Nav title="jupiter-2-descr" descr="jupiter-2-descr"/>
+				<Nav title="jupiter-3-descr" descr="jupiter-3-descr"/>
+				<Nav title="jupiter-4-descr" descr="jupiter-4-descr"/>
+		</Nav>
+		<Nav title="Saturn" desc="saturn-descr">
+				<Nav title="saturn-1-descr" descr="saturn-1-descr"/>
+				<Nav title="saturn-2-descr" descr="saturn-2-descr"/>
+				<Nav title="saturn-3-descr" descr="saturn-3-descr"/>
+				<Nav title="saturn-4-descr" descr="saturn-4-descr"/>
+		</Nav>
+		<Nav title="Neptune" desc="neptune-descr">
+				<Nav title="neptune-1-descr" descr="neptune-1-descr"/>
+				<Nav title="neptune-2-descr" descr="neptune-2-descr"/>
+				<Nav title="neptune-3-descr" descr="neptune-3-descr"/>
+				<Nav title="neptune-4-descr" descr="neptune-4-descr"/>
+		</Nav>
+		<Nav title="Uranus" desc="uranus-descr">
+				<Nav title="uranus-1-descr" descr="uranus-1-descr"/>
+				<Nav title="uranus-2-descr" descr="uranus-2-descr"/>
+				<Nav title="uranus-3-descr" descr="uranus-3-descr"/>
+				<Nav title="uranus-4-descr" descr="uranus-4-descr"/>
+		</Nav>
+	</Nav>
+	
+</cml>

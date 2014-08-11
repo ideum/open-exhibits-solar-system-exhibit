@@ -5,18 +5,15 @@
 		<RendererData>
 				
 			<Hotspot>
-				<label>Earth</label>
 				<x>1600</x>
 				<y>600</y>
 				<link>Earth-PopUp</link>
 				<graphic>library/assets/overlays/earth-overlay.png</graphic>
-				<label>Earth</label>
 				<hotspot-class>Planets</hotspot-class>
 				<tether-color>0x1b45a6</tether-color>
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Mars</label>
 				<x>1760</x>
 				<y>490</y>
 				<link>Mars-PopUp</link>
@@ -26,7 +23,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Sun</label>
 				<x>980</x>
 				<y>360</y>
 				<link>Sun-PopUp</link>
@@ -36,7 +32,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Mercury</label>
 				<x>1360</x>
 				<y>740</y>
 				<link>Mercury-PopUp</link>
@@ -46,7 +41,6 @@
 			</Hotspot>
 
 			<Hotspot>
-				<label>Venus</label>
 				<x>1480</x>
 				<y>660</y>
 				<link>Venus-PopUp</link>
@@ -56,7 +50,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Jupiter</label>
 				<x>650</x>
 				<y>210</y>
 				<link>Jupiter-PopUp</link>
@@ -66,7 +59,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Saturn</label>
 				<x>480</x>
 				<y>160</y>
 				<link>Saturn-PopUp</link>
@@ -76,7 +68,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Neptune</label>
 				<x>370</x>
 				<y>120</y>
 				<link>Neptune-PopUp</link>
@@ -86,7 +77,6 @@
 			</Hotspot>
 			
 			<Hotspot>
-				<label>Uranus</label>
 				<x>270</x>
 				<y>100</y>
 				<link>Uranus-PopUp</link>

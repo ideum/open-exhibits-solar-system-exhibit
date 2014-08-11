@@ -7,24 +7,21 @@
 			<Viewer>
 				<id>Earth-PopUp</id>
 				<title>Earth</title>
+				<main-descr>earth-descr</main-descr>
+				<main-text>This is earth</main-text>
 				<bg-color>0x1b45a6</bg-color>
 				<slide-1-graphic>library/assets/Earth/earth01.jpg</slide-1-graphic>
-				<slide-1-text>Earth is the third planet from the Sun, and the densest and fifth-largest of the eight planets in the Solar System. 
-				It is also the largest of the Solar System's four terrestrial planets. It is sometimes referred to as the world or the Blue Planet.</slide-1-text>
+				<descr-1>earth-1-descr</descr-1>
+				<slide-1-text>This is the first description of earth.</slide-1-text>
 				<slide-2-graphic>library/assets/Earth/earth02.jpg</slide-2-graphic>
-				<slide-2-text>Earth formed approximately 4.54 billion years ago, and life appeared on its surface within one billion years.
-				Earth's biosphere then significantly altered the atmospheric and other basic physical conditions, which enabled the proliferation 
-				of organisms as well as the formation of the ozone layer, which together with Earth's magnetic field blocked harmful solar radiation, 
-				and permitted formerly ocean-confined life to move safely to land.</slide-2-text>
+				<descr-2>earth-2-descr</descr-2>				
+				<slide-2-text>This is the second description of earth.</slide-2-text>
 				<slide-3-graphic>library/assets/Earth/earth03.jpg</slide-3-graphic>
-				<slide-3-text>The physical properties of the Earth, as well as its geological history and orbit, have allowed life to persist. 
-				Estimates on how much longer the planet will be able to continue to support life range from 500 million years (myr), to as long 
-				as 2.3 billion years (byr).Earth's lithosphere is divided into several rigid segments, or tectonic plates, that migrate across the 
-				surface over periods of many millions of years.</slide-3-text>
+				<descr-3>earth-3-descr</descr-3>				
+				<slide-3-text>This is the third description of earth.</slide-3-text>
 				<slide-4-graphic>library/assets/Earth/earth04.jpg</slide-4-graphic>
-				<slide-4-text>About 71% of the surface is covered by salt water oceans, with the remainder consisting of continents and islands which 
-				together have many lakes and other sources of water that contribute to the hydrosphere. Earth's poles are mostly covered with ice that 
-				is the solid ice of the Antarctic ice sheet and the sea ice that is the polar ice packs.</slide-4-text>
+				<descr-4>earth-4-descr</descr-4>				
+				<slide-4-text>This is the fourth description of earth.</slide-4-text>
 			</Viewer>
 			<!--Earth </!-->
 	
@@ -32,21 +29,27 @@
 			<Viewer>
 				<id>Mars-PopUp</id>
 				<title>Mars</title>
+				<main-descr>mars-descr</main-descr>
+				<main-text>This is mars</main-text>				
 				<bg-color>0xbe4800</bg-color>
 				<slide-1-graphic>library/assets/Mars/mars01.jpg</slide-1-graphic>
+				<descr-1>mars-1-descr</descr-1>				
 				<slide-1-text>Mars is the fourth planet from the Sun and the second smallest planet in the Solar System. Named after the Roman god of war, it is 
 				often described as the "Red Planet", as the iron oxide prevalent on its surface gives it a reddish appearance. Mars is a terrestrial planet with a 
 				thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the volcanoes, valleys, deserts, and polar ice caps of Earth.
 				</slide-1-text>
 				<slide-2-graphic>library/assets/Mars/mars02.jpg</slide-2-graphic>
+				<descr-2>mars-2-descr</descr-2>								
 				<slide-2-text>Mars is the site of Olympus Mons, the second highest known mountain within the Solar System (the tallest on a planet), and of Valles Marineris, 
 				one of the largest canyons. The smooth Borealis basin in the northern hemisphere covers 40% of the planet and may be a giant impact feature. Mars has two 
 				known moons, Phobos and Deimos, which are small and irregularly shaped.</slide-2-text>
 				<slide-3-graphic>library/assets/Mars/mars03.jpg</slide-3-graphic>
+				<descr-3>mars-3-descr</descr-3>								
 				<slide-3-text>Until the first successful Mars flyby in 1965 by Mariner 4, many speculated about the presence of liquid water on the planet's surface. This was 
 				based on observed periodic variations in light and dark patches, particularly in the polar latitudes, which appeared to be seas and continents; long, dark 
 				striations were interpreted by some as irrigation channels for liquid water.</slide-3-text>
 				<slide-4-graphic>library/assets/Mars/mars04.jpg</slide-4-graphic>
+				<descr-4>mars-4-descr</descr-4>								
 				<slide-4-text>Mars can easily be seen from Earth with the naked eye. Its apparent magnitude reaches −3.0, which is surpassed only by Jupiter, Venus, the Moon, 
 				and the Sun. Optical ground-based telescopes are typically limited to resolving features about 300 km (186 miles) across when Earth and Mars are closest, 
 				because of Earth's atmosphere.</slide-4-text>
@@ -57,20 +60,26 @@
 			<Viewer>
 				<id>Sun-PopUp</id>
 				<title>Sun</title>
+				<main-descr>sun-descr</main-descr>
+				<main-text>This is sun</main-text>				
 				<bg-color>0xd1ac02</bg-color>
 				<slide-1-graphic>library/assets/Sun/sun02.jpg</slide-1-graphic>
+				<descr-1>sun-1-descr</descr-1>								
 				<slide-1-text>The Sun is the star at the center of the Solar System. It is almost perfectly spherical and consists of hot plasma interwoven 
 				with magnetic fields. It has a diameter of about 1,392,684 km,[5] about 109 times that of Earth, and its mass (about 2×1030 kilograms, 
 				330,000 times that of Earth) accounts for about 99.86% of the total mass of the Solar System.</slide-1-text>
 				<slide-2-graphic>library/assets/Sun/sun01.jpg</slide-2-graphic>
+				<descr-2>sun-2-descr</descr-2>												
 				<slide-2-text>Chemically, about three quarters of the Sun's mass consists of hydrogen, while the rest is mostly helium. 
 				The remainder (1.69%, which nonetheless equals 5,628 times the mass of Earth) consists of heavier elements, including oxygen, carbon, 
 				neon and iron, among others.</slide-2-text>
 				<slide-3-graphic>library/assets/Sun/sun03.jpg</slide-3-graphic>
+				<descr-3>sun-3-descr</descr-3>																
 				<slide-3-text>The Sun formed about 4.6 billion years ago from the gravitational collapse of a region within a large molecular cloud. 
 				Most of the matter gathered in the center, while the rest flattened into an orbiting disk that would become the Solar System. The central mass became 
 				increasingly hot and dense, eventually initiating thermonuclear fusion in its core. It is thought that almost all other stars form by this process.</slide-3-text>
 				<slide-4-graphic>library/assets/Sun/sun04.jpg</slide-4-graphic>
+				<descr-4>sun-4-descr</descr-4>																
 				<slide-4-text>The Sun is currently traveling through the Local Interstellar Cloud (near to the G-cloud) in the Local Bubble zone, within the inner rim 
 				of the Orion Arm of the Milky Way galaxy. Of the 50 nearest stellar systems within 17 light-years from Earth (the closest being a red dwarf named Proxima 
 				Centauri at approximately 4.2 light-years away), the Sun ranks fourth in mass.</slide-4-text>
@@ -81,19 +90,25 @@
 			<Viewer>
 				<id>Mercury-PopUp</id>
 				<title>Mercury</title>
+				<main-descr>mercury-descr</main-descr>
+				<main-text>This is mercury</main-text>				
 				<bg-color>0x999999</bg-color>
 				<slide-1-graphic>library/assets/Mercury/mercury01.jpg</slide-1-graphic>
+				<descr-1>mercury-1-descr</descr-1>																
 				<slide-1-text>Mercury is the smallest and closest to the Sun of the eight planets in the Solar System,[a] with an orbital period of about 88 
 				Earth days. Since is has almost no atmosphere to retain heat, Mercury's surface experiences the greatest temperature variation of all the 
 				planets, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during the day.</slide-1-text>
 				<slide-2-graphic>library/assets/Mercury/mercury02.jpg</slide-2-graphic>
+				<descr-2>mercury-2-descr</descr-2>																				
 				<slide-2-text>Mercury's axis has the smallest tilt of any of the Solar System's planets (about 1⁄30 of a degree), but it has the largest orbital 
 				eccentricity. At aphelion, Mercury is about 1.5 times as far from the Sun as it is at perihelion. Mercury's surface is heavily cratered and similar 
 				in appearance to Earth's Moon, indicating that it has been geologically inactive for billions of years.</slide-2-text>
 				<slide-3-graphic>library/assets/Mercury/mercury03.jpg</slide-3-graphic>
+				<descr-3>mercury-3-descr</descr-3>																				
 				<slide-3-text>Mercury does not experience seasons in the same way as most other planets, such as the Earth. It is locked so it rotates in a way that is 
 				unique in the Solar System. As seen relative to the fixed stars, it rotates exactly three times for every two revolutions it makes around its orbit.</slide-3-text>
 				<slide-4-graphic>library/assets/Mercury/mercury04.jpg</slide-4-graphic>
+				<descr-4>mercury-4-descr</descr-4>																				
 				<slide-4-text>Because Mercury's orbit lies within Earth's orbit (as does Venus's), it can appear in Earth's sky either as a morning star or an evening 
 				star. Also, like Venus and the Moon, it displays a complete range of phases as it moves around its orbit relative to the Earth. While Mercury can appear 
 				as a very bright object when viewed from Earth, its proximity to the Sun makes it more difficult to see than Venus.</slide-4-text>
@@ -104,19 +119,25 @@
 			<Viewer>
 				<id>Venus-PopUp</id>
 				<title>Venus</title>
+				<main-descr>venus-descr</main-descr>
+				<main-text>This is venus</main-text>				
 				<bg-color>0x977c00</bg-color>
 				<slide-1-graphic>library/assets/Venus/venus01.jpg</slide-1-graphic>
+				<descr-1>venus-1-descr</descr-1>																				
 				<slide-1-text>Mercury is the smallest and closest to the Sun of the eight planets in the Solar System,[a] with an orbital period of about 88 
 				Earth days. Since is has almost no atmosphere to retain heat, Mercury's surface experiences the greatest temperature variation of all the 
 				planets, ranging from 100 K (−173 °C; −280 °F) at night to 700 K (427 °C; 800 °F) during the day.</slide-1-text>
 				<slide-2-graphic>library/assets/Venus/venus02.jpg</slide-2-graphic>
+				<descr-2>venus-2-descr</descr-2>																								
 				<slide-2-text>Mercury's axis has the smallest tilt of any of the Solar System's planets (about 1⁄30 of a degree), but it has the largest orbital 
 				eccentricity. At aphelion, Mercury is about 1.5 times as far from the Sun as it is at perihelion. Mercury's surface is heavily cratered and similar 
 				in appearance to Earth's Moon, indicating that it has been geologically inactive for billions of years.</slide-2-text>
 				<slide-3-graphic>library/assets/Venus/venus03.jpg</slide-3-graphic>
+				<descr-3>venus-3-descr</descr-3>																								
 				<slide-3-text>Mercury does not experience seasons in the same way as most other planets, such as the Earth. It is locked so it rotates in a way that is 
 				unique in the Solar System. As seen relative to the fixed stars, it rotates exactly three times for every two revolutions it makes around its orbit.</slide-3-text>
 				<slide-4-graphic>library/assets/Venus/venus04.jpg</slide-4-graphic>
+				<descr-4>venus-4-descr</descr-4>																								
 				<slide-4-text>Because Mercury's orbit lies within Earth's orbit (as does Venus's), it can appear in Earth's sky either as a morning star or an evening 
 				star. Also, like Venus and the Moon, it displays a complete range of phases as it moves around its orbit relative to the Earth. While Mercury can appear 
 				as a very bright object when viewed from Earth, its proximity to the Sun makes it more difficult to see than Venus.</slide-4-text>
@@ -127,20 +148,26 @@
 			<Viewer>
 				<id>Jupiter-PopUp</id>
 				<title>Jupiter</title>
+				<main-descr>jupiter-descr</main-descr>
+				<main-text>This is jupiter</main-text>				
 				<bg-color>0x979073</bg-color>
 				<slide-1-graphic>library/assets/Jupiter/jupiter01.jpg</slide-1-graphic>
+				<descr-1>jupiter-1-descr</descr-1>																								
 				<slide-1-text>Jupiter is the fifth planet from the Sun and the largest planet in the Solar System. It is a gas giant with mass one-thousandth that 
 				of the Sun but is two and a half times the mass of all the other planets in the Solar System combined. Jupiter is classified as a gas giant along 
 				with Saturn, Uranus and Neptune.</slide-1-text>
 				<slide-2-graphic>library/assets/Jupiter/jupiter02.jpg</slide-2-graphic>
+				<descr-2>jupiter-2-descr</descr-2>				
 				<slide-2-text>Jupiter is primarily composed of hydrogen with a quarter of its mass being helium, although helium only comprises about a 
 				tenth of the number of molecules. It may also have a rocky core of heavier elements, but like the other gas giants, Jupiter lacks a 
 				well-defined solid surface. Because of its rapid rotation, the planet's shape is that of an oblate spheroid.</slide-2-text>
 				<slide-3-graphic>library/assets/Jupiter/jupiter03.jpg</slide-3-graphic>
+				<descr-3>jupiter-3-descr</descr-3>				
 				<slide-3-text>Jupiter has been explored on several occasions by robotic spacecraft, most notably during the early Pioneer and Voyager flyby missions and 
 				later by the Galileo orbiter. The most recent probe to visit Jupiter was the Pluto-bound New Horizons spacecraft in late February 2007. The probe used the 
 				gravity from Jupiter to increase its speed.</slide-3-text>
 				<slide-4-graphic>library/assets/Jupiter/jupiter04.jpg</slide-4-graphic>
+				<descr-4>jupiter-4-descr</descr-4>				
 				<slide-4-text>Jupiter is composed primarily of gaseous and liquid matter. It is the largest of four gas giants as well as the largest 
 				planet in the Solar System with a diameter of 142,984 km at its equator. The density of Jupiter, 1.326 g/cm3, is the second highest of the 
 				gas giant planets. The density is lower than any of the four terrestrial planets.</slide-4-text>
@@ -151,20 +178,26 @@
 			<Viewer>
 				<id>Saturn-PopUp</id>
 				<title>Saturn</title>
+				<main-descr>saturn-descr</main-descr>
+				<main-text>This is saturn</main-text>								
 				<bg-color>0xd7c261</bg-color>
 				<slide-1-graphic>library/assets/Saturn/saturn01.jpg</slide-1-graphic>
+				<descr-1>saturn-1-descr</descr-1>				
 				<slide-1-text>Saturn is the sixth planet from the Sun and the second largest planet in the Solar System, after Jupiter. Named after the Roman god 
 				Saturn, its astronomical symbol represents the god's sickle. Saturn is a gas giant with an average radius about nine times that of Earth. While only 
 				one-eighth the average density of Earth, with its larger volume Saturn is just over 95 times more massive than Earth.</slide-1-text>
 				<slide-2-graphic>library/assets/Saturn/saturn02.jpg</slide-2-graphic>
+				<descr-2>saturn-2-descr</descr-2>								
 				<slide-2-text>Saturn's interior is probably composed of a core of iron, nickel and rock (silicon and oxygen compounds), surrounded by a deep layer of metallic hydrogen, 
 				an intermediate layer of liquid hydrogen and liquid helium and an outer gaseous layer.[17] The planet exhibits a pale yellow hue due to ammonia crystals in its upper 
 				atmosphere.</slide-2-text>
 				<slide-3-graphic>library/assets/Saturn/saturn03.jpg</slide-3-graphic>
+				<descr-3>saturn-3-descr</descr-3>								
 				<slide-3-text>Saturn has a prominent ring system that consists of nine continuous main rings and three discontinuous arcs, composed mostly of 
 				ice particles with a smaller amount of rocky debris and dust. Sixty-two known moons orbit the planet; fifty-three are officially named. This does not
 				include the hundreds of "moonlets" within the rings.</slide-3-text>
 				<slide-4-graphic>library/assets/Saturn/saturn04.jpg</slide-4-graphic>
+				<descr-4>saturn-4-descr</descr-4>								
 				<slide-4-text>Saturn is classified as a gas giant planet because the exterior is predominantly composed of gas and it lacks a definite surface, although 
 				it may have a solid core. The rotation of the planet causes it to take the shape of an oblate spheroid; that is, it is flattened at the poles and bulges 
 				at the equator. Its equatorial and polar radii differ by almost 10%—60,268 km versus 54,364 km, respectively.</slide-4-text>
@@ -175,20 +208,26 @@
 			<Viewer>
 				<id>Neptune-PopUp</id>
 				<title>Neptune</title>
+				<main-descr>neptune-descr</main-descr>
+				<main-text>This is neptune</main-text>								
 				<bg-color>0x6ca7d0</bg-color>
 				<slide-1-graphic>library/assets/Neptune/neptune01.jpg</slide-1-graphic>
+				<descr-1>neptune-1-descr</descr-1>								
 				<slide-1-text>Neptune is the eighth and farthest planet from the Sun in the Solar System. It is the fourth-largest planet by diameter and the third-largest 
 				by mass. Neptune is 17 times the mass of Earth and is somewhat more massive than its near-twin Uranus, which is 15 times the mass of Earth but not as dense. 
 				On average, Neptune orbits the Sun at a distance of 30.1 AU, approximately 30 times the Earth–Sun distance.</slide-1-text>
 				<slide-2-graphic>library/assets/Neptune/neptune02.jpg</slide-2-graphic>
+				<descr-2>neptune-2-descr</descr-2>								
 				<slide-2-text>Neptune is similar in composition to Uranus, and both have compositions which differ from those of the larger gas giants, Jupiter, and Saturn. 
 				Neptune's atmosphere, while similar to Jupiter's and Saturn's in that it is composed primarily of hydrogen and helium, along with traces of hydrocarbons and 
 				possibly nitrogen, contains a higher proportion of "ices" such as water, ammonia, and methane.</slide-2-text>
 				<slide-3-graphic>library/assets/Neptune/neptune03.jpg</slide-3-graphic>
+				<descr-3>neptune-3-descr</descr-3>												
 				<slide-3-text>The interior of Neptune, like that of Uranus, is primarily composed of ices and rock. It is possible that the core has a solid surface, but 
 				the temperature would be thousands of degrees and the atmospheric pressure crushing.[15] Traces of methane in the outermost regions in part account for the 
 				planet's blue appearance.</slide-3-text>
 				<slide-4-graphic>library/assets/Neptune/neptune04.jpg</slide-4-graphic>
+				<descr-4>neptune-4-descr</descr-4>												
 				<slide-4-text>At high altitudes, Neptune's atmosphere is 80% hydrogen and 19% helium. A trace amount of methane is also present. Prominent absorption bands 
 				of methane occur at wavelengths above 600 nm, in the red and infrared portion of the spectrum. As with Uranus, this absorption of red light by the atmospheric 
 				methane is part of what gives Neptune its blue hue.</slide-4-text>
@@ -199,18 +238,24 @@
 			<Viewer>
 				<id>Uranus-PopUp</id>
 				<title>Uranus</title>
+				<main-descr>uranus-descr</main-descr>
+				<main-text>This is uranus</main-text>								
 				<bg-color>0x65bcbd</bg-color>
 				<slide-1-graphic>library/assets/Uranus/uranus01.jpg</slide-1-graphic>
+				<descr-1>uranus-1-descr</descr-1>												
 				<slide-1-text>Uranus is the seventh planet from the Sun. It has the third-largest planetary radius and fourth-largest planetary mass in the Solar System. Uranus is similar in 
 				composition to Neptune, and both are of different chemical composition than the larger gas giants Jupiter and Saturn.</slide-1-text>
 				<slide-2-graphic>library/assets/Uranus/uranus02.jpg</slide-2-graphic>
+				<descr-2>uranus-2-descr</descr-2>																
 				<slide-2-text>Like the other gas giants, Uranus has a ring system, a magnetosphere, and numerous moons. The Uranian system has a unique configuration among the 
 				planets because its axis of rotation is tilted sideways, nearly into the plane of its revolution about the Sun. Its north and south poles therefore lie where most 
 				other planets have their equators.</slide-2-text>
 				<slide-3-graphic>library/assets/Uranus/uranus03.jpg</slide-3-graphic>
+				<descr-3>uranus-3-descr</descr-3>																
 				<slide-3-text>Uranus revolves around the Sun once every 84 Earth years. Its average distance from the Sun is roughly 3 billion km (about 20 AU). The intensity of 
 				sunlight on Uranus is about 1/400 that on Earth. Its orbital elements were first calculated in 1783 by Pierre-Simon Laplace.</slide-3-text>
 				<slide-4-graphic>library/assets/Uranus/uranus04.jpg</slide-4-graphic>
+				<descr-4>uranus-4-descr</descr-4>																
 				<slide-4-text>From 1995 to 2006, Uranus's apparent magnitude fluctuated between +5.6 and +5.9, placing it just within the limit of naked eye 
 				visibility at +6.5. Its angular diameter is between 3.4 and 3.7 arcseconds, compared with 16 to 20 arcseconds for Saturn and 32 to 45 arcseconds for 
 				Jupiter. At opposition, Uranus is visible to the naked eye in dark skies, and becomes an easy target even in urban conditions with binoculars.</slide-4-text>

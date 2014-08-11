@@ -41,7 +41,7 @@ package
 		{	
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			//var accessibility:AccessibilityManager = new AccessibilityManager("accessibility-nav");
+			var accessibility:AccessibilityManager = new AccessibilityManager("accessibility-nav");			
 		}		
 
 	}

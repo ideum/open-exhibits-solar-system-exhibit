@@ -102,5 +102,237 @@
 			</Gesture>			
 	
 		</Gesture_set>
+		
+<Gesture_set gesture_set_name="accessibility-gestures">
+		
+	<Gesture id="acc-1-finger-swipe-left" type="swipe">
+										<match>
+											<action>
+												<initial>
+													<cluster point_number="1" point_number_min="1" point_number_max="1"/>
+													<event touch_event="gwTouchEnd"/>
+												</initial>
+											</action>
+										</match>
+										<analysis>
+											<algorithm class="kinemetric" type="continuous">
+												<library module="swipe" />
+												<variables>
+													<property id="swipe_dx" var="etm_ddx" return="etm_dx" var_min="1"/>
+												</variables>
+												<returns>
+													<property id="swipe_dx" result="etm_dx"/>
+												</returns>
+											</algorithm>
+										</analysis>
+										<processing>
+											<delta_filter>
+													<property ref="swipe_dx" active="true" directional="true" delta_min="-10" delta_max="-30"/>	
+											</delta_filter>
+										</processing>
+										<mapping>
+											<update dispatch_type="discrete" dispatch_mode="cluster_remove" dispatch_reset="cluster_remove">
+												<gesture_event  type="swipe">
+													<property ref="swipe_dx" target=""/>
+													
+												</gesture_event>
+											</update>
+										</mapping>
+									</Gesture>
+
+	<Gesture id="acc-1-finger-swipe-right" type="swipe">
+										<match>
+											<action>
+												<initial>
+													<cluster point_number="1" point_number_min="1" point_number_max="1"/>
+													<event touch_event="gwTouchEnd"/>
+												</initial>
+											</action>
+										</match>
+										<analysis>
+											<algorithm class="kinemetric" type="continuous">
+												<library module="swipe" />
+												<variables>
+													<property id="swipe_dx" var="etm_ddx" return="etm_dx" var_min="1"/>
+												</variables>
+												<returns>
+													<property id="swipe_dx" result="etm_dx"/>
+												</returns>
+											</algorithm>
+										</analysis>
+										<processing>
+											<delta_filter>
+													<property ref="swipe_dx" active="true" directional="true" delta_min="10" delta_max="30"/>	
+											</delta_filter>
+										</processing>
+										<mapping>
+											<update dispatch_type="discrete" dispatch_mode="cluster_remove" dispatch_reset="cluster_remove">
+												<gesture_event  type="swipe">
+													<property ref="swipe_dx" target=""/>
+													
+												</gesture_event>
+											</update>
+										</mapping>
+									</Gesture>
+
+
+	<Gesture id="acc-2-finger-swipe-left" type="swipe">
+										<match>
+											<action>
+												<initial>
+													<cluster point_number="2" />
+													<event touch_event="gwTouchEnd"/>
+												</initial>
+											</action>
+										</match>
+										<analysis>
+											<algorithm class="kinemetric" type="continuous">
+												<library module="swipe" />
+												<variables>
+													<property id="swipe_dx" var="etm_ddx" return="etm_dx" var_min="1"/>
+												</variables>
+												<returns>
+													<property id="swipe_dx" result="etm_dx"/>
+												</returns>
+											</algorithm>
+										</analysis>
+										<processing>
+											<delta_filter>
+													<property ref="swipe_dx" active="true" directional="true" delta_min="-10" delta_max="-30"/>	
+											</delta_filter>
+										</processing>
+										<mapping>
+											<update dispatch_type="discrete" dispatch_mode="cluster_remove" dispatch_reset="cluster_remove">
+												<gesture_event  type="swipe">
+													<property ref="swipe_dx" target=""/>
+												</gesture_event>
+											</update>
+										</mapping>
+									</Gesture>
+
+	<Gesture id="acc-1-finger-double-tap" type="double_tap">
+						  <match>
+							  <action>
+								  <initial>
+									  <point event_duration_max="300" interevent_duration_max="300" translation_max="20"/>
+									  <cluster point_number="1"/>
+									  <event gesture_event="tap"/>
+								  </initial>
+							  </action>
+						  </match>	
+						  <analysis>
+							  <algorithm class="temporalmetric" type="discrete">
+								  <library module="double_tap"/>
+								  <returns>
+									  <property id="double_tap_x" result="x"/>
+									  <property id="double_tap_y" result="y"/>
+									  <property id="double_tap_n" result="n"/>
+								  </returns>
+							  </algorithm>
+						  </analysis>	
+						  <mapping>
+							  <update dispatch_type="discrete" dispatch_mode="batch" dispatch_interval="200">
+								  <gesture_event  type="double_tap">
+									  <property ref="double_tap_x"/>
+									  <property ref="double_tap_y"/>
+									  <property ref="double_tap_n"/>
+								  </gesture_event>
+							  </update>
+						  </mapping>
+					  </Gesture>
+
+	<Gesture id="acc-3-finger-hold" type="hold">
+		<match>
+			<action>
+				<initial>
+					<point event_duration_min="500" translation_max="2"/>
+					<cluster point_number="3" point_number_min="3" point_number_max="3"/>
+				</initial>
+			</action>
+		</match>	
+		<analysis>
+			<algorithm class="temporalmetric" type="discrete">
+				<library  module="hold"/>
+				<returns>
+					<property id="hold_x" result="x"/>
+					<property id="hold_y" result="y"/>
+					<property id="hold_n" result="n"/>
+				</returns>
+			</algorithm>
+		</analysis>	
+		<mapping>
+			<update dispatch_type="discrete">
+				<gesture_event  type="hold">
+					<property ref="hold_x"/>
+					<property ref="hold_y"/>
+					<property ref="hold_n"/>
+				</gesture_event>
+			</update>
+		</mapping>
+	</Gesture>
+	
+	<Gesture id="acc-3-finger-tap" type="tap">
+							<match>
+								<action>
+									<initial>
+										<point event_duration_max="200" translation_max="10"/>
+										<cluster point_number="3"/>
+										<event touch_event="gwTouchEnd"/>
+									</initial>
+								</action>
+							</match>	
+							<analysis>
+								<algorithm class="temporalmetric" type="discrete">
+									<library module="tap"/>
+									<returns>
+										<property id="tap_x" result="x"/>
+										<property id="tap_y" result="y"/>
+										<property id="tap_n" result="n"/>
+									</returns>
+								</algorithm>
+							</analysis>	
+							<mapping>
+								<update dispatch_type="discrete" dispatch_mode="batch" dispatch_interval="200">
+									<gesture_event type="tap">
+										<property ref="tap_x"/>
+										<property ref="tap_y"/>
+										<property ref="tap_n"/>
+									</gesture_event>
+								</update>
+							</mapping>
+						</Gesture>
+						
+	<Gesture id="acc-4-finger-tap" type="tap">
+							<match>
+								<action>
+									<initial>
+										<point event_duration_max="200" translation_max="10"/>
+										<cluster point_number="4"/>
+										<event touch_event="gwTouchEnd"/>
+									</initial>
+								</action>
+							</match>	
+							<analysis>
+								<algorithm class="temporalmetric" type="discrete">
+									<library module="tap"/>
+									<returns>
+										<property id="tap_x" result="x"/>
+										<property id="tap_y" result="y"/>
+										<property id="tap_n" result="n"/>
+									</returns>
+								</algorithm>
+							</analysis>	
+							<mapping>
+								<update dispatch_type="discrete" dispatch_mode="batch" dispatch_interval="200">
+									<gesture_event type="tap">
+										<property ref="tap_x"/>
+										<property ref="tap_y"/>
+										<property ref="tap_n"/>
+									</gesture_event>
+								</update>
+							</mapping>
+						</Gesture>
+	
+	</Gesture_set>			
 	
 </GestureMarkupLanguage>
