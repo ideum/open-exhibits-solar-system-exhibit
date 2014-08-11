@@ -15,16 +15,19 @@
 				<slide-1-text>Earth is the third planet from the Sun, and the densest and fifth-largest of the eight planets in the Solar System. 
 				It is also the largest of the Solar System's four terrestrial planets. It is sometimes referred to as the world or the Blue Planet.</slide-1-text>
 				<slide-2-graphic>library/assets/Earth/earth02.jpg</slide-2-graphic>
+				<descr-2>earth-2-descr</descr-2>				
 				<slide-2-text>Earth formed approximately 4.54 billion years ago, and life appeared on its surface within one billion years.
 				Earth's biosphere then significantly altered the atmospheric and other basic physical conditions, which enabled the proliferation 
 				of organisms as well as the formation of the ozone layer, which together with Earth's magnetic field blocked harmful solar radiation, 
 				and permitted formerly ocean-confined life to move safely to land.</slide-2-text>
 				<slide-3-graphic>library/assets/Earth/earth03.jpg</slide-3-graphic>
+				<descr-3>earth-3-descr</descr-3>				
 				<slide-3-text>The physical properties of the Earth, as well as its geological history and orbit, have allowed life to persist. 
 				Estimates on how much longer the planet will be able to continue to support life range from 500 million years (myr), to as long 
 				as 2.3 billion years (byr).Earth's lithosphere is divided into several rigid segments, or tectonic plates, that migrate across the 
 				surface over periods of many millions of years.</slide-3-text>
 				<slide-4-graphic>library/assets/Earth/earth04.jpg</slide-4-graphic>
+				<descr-4>earth-4-descr</descr-4>				
 				<slide-4-text>About 71% of the surface is covered by salt water oceans, with the remainder consisting of continents and islands which 
 				together have many lakes and other sources of water that contribute to the hydrosphere. Earth's poles are mostly covered with ice that 
 				is the solid ice of the Antarctic ice sheet and the sea ice that is the polar ice packs.</slide-4-text>
