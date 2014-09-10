@@ -5,3 +5,4 @@ bin/*.swf
 bin/*.exe
 installer.nsi
 lib/
+installer/
