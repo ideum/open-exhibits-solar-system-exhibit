@@ -1,5 +1,6 @@
 package 
 {
+	import com.gestureworks.cml.components.SlideshowViewer;
 	import com.gestureworks.cml.core.*;
 	import com.gestureworks.cml.elements.*;
 	import com.gestureworks.cml.events.*;
@@ -24,8 +25,8 @@ package
 		{
 			super();
 			cml = "library/cml/solar_application.cml";
-			gml="library/gml/solar_gestures.gml"
-
+			gml = "library/gml/solar_gestures.gml"; 
+			
 			CMLParser.debug = false;			
 			CMLParser.addEventListener(CMLParser.COMPLETE, cmlInit);
 		}
@@ -37,10 +38,50 @@ package
 		
 		private function cmlInit(event:Event):void
 		{	
+			
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			var nps:Solar = new Solar;
-		}		
+			this.addEventListener(Event.ENTER_FRAME, enterFrameHandler);
+			
+			var viewers:LinkedMap = CMLObjectList.instance.getClass(SlideshowViewer);
+			while (viewers.hasNext()) {
+				var viewer:SlideshowViewer = viewers.currentValue as SlideshowViewer;
+				viewer.addEventListener(StateEvent.CHANGE, popUpPlacementHandler);
+				viewers.next();
+			}
+			
+		}
+		
+		
+		// handle all frame even
+		private function enterFrameHandler(event:Event):void {
+			var viewers:LinkedMap = CMLObjectList.instance.getClass(SlideshowViewer);
+			while (viewers.hasNext()) {
+				var viewer:SlideshowViewer = viewers.currentValue as SlideshowViewer;
+				
+				// force scale constraints
+				if (viewer.scaleX < .5) {
+					viewer.scaleX = .5;
+					viewer.scaleY = .5;
+				} else if (viewer.scaleX > 2) {
+					viewer.scaleX = 2;
+					viewer.scaleY = 2;
+				}
+				
+				viewers.next();
+			}
+		}
+		
+		private function popUpPlacementHandler(event:StateEvent):void {
+			
+			// always open close to center but offset based on hotspot location
+			if (event.property == "hotspot") {
+				var viewer:SlideshowViewer = document.getElementById(event.target.id) as SlideshowViewer;
+				viewer.x = (DefaultStage.instance.stage.stageWidth *.5 - viewer.x)*.1 + DefaultStage.instance.stage.stageWidth*.5;
+				viewer.y = (DefaultStage.instance.stage.stageHeight *.5 - viewer.y)*.1 + DefaultStage.instance.stage.stageHeight*.2;
+			}
+			
+		}
 
 	}
 }
