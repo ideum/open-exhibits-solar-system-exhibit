@@ -41,7 +41,7 @@ package
 			
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			this.addEventListener(Event.ENTER_FRAME, enterFrameHandler);
+			//this.addEventListener(Event.ENTER_FRAME, enterFrameHandler);
 			
 			var viewers:LinkedMap = CMLObjectList.instance.getClass(SlideshowViewer);
 			while (viewers.hasNext()) {
@@ -54,6 +54,7 @@ package
 		
 		
 		// handle all frame even
+		/*
 		private function enterFrameHandler(event:Event):void {
 			var viewers:LinkedMap = CMLObjectList.instance.getClass(SlideshowViewer);
 			while (viewers.hasNext()) {
@@ -71,6 +72,7 @@ package
 				viewers.next();
 			}
 		}
+		*/
 		
 		private function popUpPlacementHandler(event:StateEvent):void {
 			

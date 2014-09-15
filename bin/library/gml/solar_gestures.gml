@@ -9,10 +9,10 @@
 				<match>
 					<action>
 						<initial>
-							<cluster point_number="0" point_number_min="1" point_number_max="10" translation_threshold="0"/>
+							<cluster point_number="0" point_number_min="1" point_number_max="10"/>
 						</initial>
 					</action>
-				</match>	
+				</match>
 				<analysis>
 					<algorithm class="kinemetric" type="continuous">
 						<library module="drag"/>
@@ -24,15 +24,15 @@
 				</analysis>	
 				<processing>
 					<boundary_filter>
-						   <property ref="dx" active="true" boundary_min="100" boundary_max="1720"/>
-						   <property ref="dy" active="true" boundary_min="100" boundary_max="880"/>
+						<property ref="drag_dx" active="true" boundary_min="100" boundary_max="1720"/>
+						<property ref="drag_dy" active="true" boundary_min="100" boundary_max="880"/>
 					</boundary_filter>
-				</processing> 
+				</processing>												
 				<mapping>
 					<update dispatch_type="continuous">
-						<gesture_event  type="drag">
-							<property ref="drag_dx" target="x" delta_threshold="true" delta_min="0.01" delta_max="100"/>
-							<property ref="drag_dy" target="y" delta_threshold="true" delta_min="0.01" delta_max="100"/>
+						<gesture_event type="drag">
+							<property ref="drag_dx" target="x" min="0" max="1620" />
+							<property ref="drag_dy" target="y" min="0" max="780" />
 						</gesture_event>
 					</update>
 				</mapping>
@@ -84,18 +84,18 @@
 							<property id="scale_dsy" result="ds"/>
 						</returns>
 					</algorithm>
-				</analysis>
+				</analysis>	
 				<processing>
 					<boundary_filter>
-						   <property ref="scale_dsx" active="true" boundary_min="0.5" boundary_max="2"/>
-						   <property ref="scale_dsy" active="true" boundary_min="0.5" boundary_max="2"/>
+						<property ref="scale_dsx" active="true" boundary_min=".5" boundary_max="2"/>
+						<property ref="scale_dsy" active="true" boundary_min=".5" boundary_max="2"/>
 					</boundary_filter>
-				</processing>
+				</processing>		
 				<mapping>
 					<update dispatch_type="continuous">
-						<gesture_event  type="scale">
-							<property ref="scale_dsx" target="scaleX"/>
-							<property ref="scale_dsy" target="scaleY"/>
+						<gesture_event type="scale">
+							<property ref="scale_dsx" target="scaleX" min=".5" max="2"/>
+							<property ref="scale_dsy" target="scaleY" min=".5" max="2"/>
 						</gesture_event>
 					</update>
 				</mapping>
