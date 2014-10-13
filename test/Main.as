@@ -8,7 +8,7 @@ package
 	 * OE Solar System Exhibit
 	 * @author Ideum
 	 */
-	[SWF(width = "1920", height = "1080", backgroundColor = "0x000000", frameRate = "30")]
+	[SWF(width = "1280", height = "720", backgroundColor = "0x000000", frameRate = "30")]
 
 	public class Main extends GestureWorks
 	{
@@ -27,8 +27,7 @@ package
  		{
 			//speak("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ");	
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, function(e:KeyboardEvent):void {
-				//speak("A Yo I stand outside the gates of Buckingham Palace Selling reefer, puffin the chalice with the Beefeaters, Gettin so high that whenever I drop shit, it'll land on the window of your airplane cockpit");
-				speak("testing this shit out");
+				speak("I have a dream that one day this nation will rise up and live out the true meaning of its creed: We hold these truths to be self-evident, that all men are created equal.");
 			});			
 		}		
 		
