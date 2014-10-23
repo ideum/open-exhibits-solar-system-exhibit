@@ -14,20 +14,30 @@ package
 	{
 		private var speech:SpeechManager;
 		private var speechProperties:SSMLObject;
+		private var speechProperties2:SSMLObject;
+		private var words:Array = ["There must be some kind of way out of here", "Said the joker to the theif", "There's too much confusion, I can't get no relief."];
+		private var words2:Array = ["Business men they drink my wine", "Plowmen dig my earth", "None will live on the line, Nobody of it is worth"];
+		private var index:int = 0;
 		
 		public function Main():void 
 		{
 			super();
 			gml = "library/gml/solar_gestures.gml";
 			speech = new SpeechManager();
-			speechProperties = new SSMLObject();
+			speechProperties = new SSMLObject("", 1.0, "en", 100, 0, 1);
+			speechProperties2 = new SSMLObject("", 1.0, "en", 100, 1, -1, true);
 		}
 		
 		override protected function gestureworksInit():void
  		{
-			//speak("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. ");	
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, function(e:KeyboardEvent):void {
-				speak("I have a dream that one day this nation will rise up and live out the true meaning of its creed: We hold these truths to be self-evident, that all men are created equal.");
+				if(e.keyCode == 13){
+					speak(words[index]);
+				}
+				else if (e.keyCode == 191) {
+					speak2(words2[index]);	
+				}
+				index = index == words.length -1 ? 0 : index + 1; 
 			});			
 		}		
 		
@@ -40,5 +50,11 @@ package
 			content.content = SSMLObject.stringToParagraph(value);
 			speech.speak(content.encode());
 		}		
+		
+		public function speak2(value:String):void {
+			var content:SSMLObject = speechProperties2.clone();
+			content.content = SSMLObject.stringToParagraph(value);
+			speech.speak(content.encode());
+		}
 	}
 }
