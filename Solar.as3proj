@@ -52,8 +52,17 @@
   </includeLibraries>
   <!-- SWC Libraries -->
   <libraryPaths>
-    <element path="lib\GestureWorksCML_4.0.0.swc" />
-    <element path="lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\gwas\development\lib\cml_ext.swc" />
+    <element path="..\..\gwas\development\lib\gml_ext.swc" />
+    <element path="..\..\lib\GestureWorksCML.swc" />
+    <element path="..\..\lib\GestureWorksGML.swc" />
+    <element path="..\lib\GestureWorksCML_4.0.0.swc" />
+    <element path="..\lib\GestureWorksGML_4.0.0.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\acc.swc" />
+    <element path="..\..\gestureworks-flash-cml\lib\AS3WebSocket-RFC6455-v5.swc" />
+    <element path="lib\GestureWorksCML_4.1.0.swc" />
+    <element path="lib\GestureWorksGML_4.1.0.swc" />
+    <element path="lib\textLayout.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
