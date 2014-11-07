@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <cml>
 	
-	<Nav id="accessibility-nav" title="home-title" desc="home-description">
+	<Nav id="accessibility-nav" title="home-title" desc="home-description" rate="1.5">
 		<Nav title="Earth" desc="earth-descr">
 				<Nav title="earth-1-descr" descr="earth-1-descr"/>
 				<Nav title="earth-2-descr" descr="earth-2-descr"/>

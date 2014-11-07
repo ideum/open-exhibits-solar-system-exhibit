@@ -70,7 +70,7 @@
 				<id>Sun-PopUp</id>
 				<title>Sun</title>
 				<main-descr>sun-descr</main-descr>
-				<main-text>This is sun</main-text>				
+				<main-text>This is the sun</main-text>				
 				<bg-color>0xd1ac02</bg-color>
 				<slide-1-graphic>library/assets/Sun/sun02.jpg</slide-1-graphic>
 				<descr-1>sun-1-descr</descr-1>								
