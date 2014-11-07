@@ -1,9 +1,4 @@
 # Ignore Files
 
 obj/
-bin/*.swf
-bin/*.exe
-installer/Dependencies/*
-installer/SAPI-Server/*
-installer/*.exe
 lib/
