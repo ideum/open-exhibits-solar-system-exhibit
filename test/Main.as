@@ -15,6 +15,7 @@ package
 		private var speech:SpeechManager;
 		private var speechProperties:SSMLObject;
 		private var speechProperties2:SSMLObject;
+		private var speechProperties3:SSMLObject;
 		private var words:Array = ["There must be some kind of way out of here", "Said the joker to the theif", "There's too much confusion, I can't get no relief."];
 		private var words2:Array = ["Business men they drink my wine", "Plowmen dig my earth", "None will live on the line, Nobody of it is worth"];
 		private var index:int = 0;
@@ -24,18 +25,22 @@ package
 			super();
 			gml = "library/gml/solar_gestures.gml";
 			speech = new SpeechManager();
-			speechProperties = new SSMLObject("", 1.0, "en", 100, 0, 1);
-			speechProperties2 = new SSMLObject("", 1.0, "en", 100, 1, -1, true);
+			speechProperties = new SSMLObject("", 1.5, "en", 100, 0, 0, true);
+			speechProperties2 = new SSMLObject("", 1.5, "en", 100, 1, 0, true);
+			speechProperties3 = new SSMLObject("", 1.5, "en", 100, 2, 0, true);
 		}
 		
 		override protected function gestureworksInit():void
  		{
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, function(e:KeyboardEvent):void {
 				if(e.keyCode == 13){
-					speak(words[index]);
+					speak("Welcome to the solar system exhibit. Use touch gestures to interact");
 				}
 				else if (e.keyCode == 191) {
-					speak2(words2[index]);	
+					speak2("Welcome to the solar system exhibit. Use touch gestures to interact");	
+				}
+				else if (e.keyCode == 16) {
+					speak3("Welcome to the solar system exhibit. Use touch gestures to interact");
 				}
 				index = index == words.length -1 ? 0 : index + 1; 
 			});			
@@ -56,5 +61,11 @@ package
 			content.content = SSMLObject.stringToParagraph(value);
 			speech.speak(content.encode());
 		}
+		
+		public function speak3(value:String):void {
+			var content:SSMLObject = speechProperties3.clone();
+			content.content = SSMLObject.stringToParagraph(value);
+			speech.speak(content.encode());
+		}		
 	}
 }

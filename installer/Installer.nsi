@@ -86,15 +86,7 @@ Section -Dependencies
 		;Microsoft Speech Platform - Runtime Languages (Version 11)
 		;Download from here: http://www.microsoft.com/en-us/download/details.aspx?id=27224
 		
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_de-DE_Hedda.msi"'
 		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_en-US_Helen.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_es-ES_Helena.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_fr-FR_Hortense.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_it-IT_Lucia.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_nl-NL_Hanna.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_pt-BR_Heloisa.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_ru-RU_Elena.msi"'
-		ExecWait '"msiexec" /i "Dependencies\MSSpeech_TTS_zh-CN_HuiHui.msi"'
 
 		Goto endLanguageDependencies
 	endLanguageDependencies:

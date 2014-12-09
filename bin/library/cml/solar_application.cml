@@ -14,10 +14,6 @@
 		<Image id="default-bg" src="library/assets/ss-background.png" visible="true"/>   
 	</Background>
 	
-	<!-- Accessibility Defaults -->
-	<Include src="library/cml/accessibility/accessibility-defaults.cml"/>
-	<Include src="library/cml/accessibility/accessibility-nav.cml"/>
-	
 	<!-- Marker Renderer -->
 	<Include src="library/cml/renderers/planets.cml"/>
 
@@ -27,5 +23,10 @@
 	<LibraryKit>
 		<Library type="swf" src="library/swfs/openexhibits_assets.swf" />	
 	</LibraryKit>
+	
+	<!-- Accessibility Layer -->	
+	<Include src="library/cml/accessibility/accessibility-defaults.cml"/>
+	<Include src="library/cml/accessibility/accessibility-nav.cml"/>	
+	<AccessibilityLayer rootNav="accessibility-nav" userCount="4"/>	
 	
 </cml>

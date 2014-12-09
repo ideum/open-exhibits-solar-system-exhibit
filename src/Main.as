@@ -1,20 +1,11 @@
 package 
 {
-	import acc.*;
-	import com.gestureworks.cml.accessibility.*;
-	import com.gestureworks.cml.core.*;
-	import com.gestureworks.cml.elements.*;
-	import com.gestureworks.cml.events.*;
-	import com.gestureworks.cml.managers.*;
-	import com.gestureworks.cml.utils.*;
-	import com.gestureworks.core.*;
-	import com.gestureworks.events.*;
-	import flash.events.*;
-	import flash.text.*;
-	import flash.utils.*;
+	import com.gestureworks.cml.accessibility.AccessibilityLayer;
+	import com.gestureworks.cml.core.CMLParser;
+	import com.gestureworks.core.GestureWorks;
+	import flash.events.Event;
 	
 	/**
-	 * OE Solar System Exhibit
 	 * @author Ideum
 	 */
 	[SWF(width = "1920", height = "1080", backgroundColor = "0x000000", frameRate = "30")]
@@ -41,7 +32,6 @@ package
 		{	
 			trace("cmlInit()");
 			CMLParser.removeEventListener(CMLParser.COMPLETE, cmlInit);
-			var accessibility:AccessibilityManager = new AccessibilityManager("accessibility-nav");			
 		}		
 
 	}
