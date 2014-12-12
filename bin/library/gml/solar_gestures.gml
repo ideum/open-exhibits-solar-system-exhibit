@@ -278,8 +278,8 @@
 			<match>
 				<action>
 					<initial>
-						<point event_duration_max="1" translation_max="200"/>
-						<cluster point_number="0" point_number_min="1" point_number_max="2"/>
+						<point event_duration_max=".2" translation_max="2"/>
+						<cluster point_number="1"/>
 						<event touch_event="gwTouchEnd"/>
 					</initial>
 				</action>
