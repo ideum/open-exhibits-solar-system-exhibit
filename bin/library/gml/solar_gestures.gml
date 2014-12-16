@@ -303,6 +303,37 @@
 					</gesture_event>
 				</update>
 			</mapping>
+		</Gesture>	
+		
+		<Gesture id="acc-2-finger-tap" type="tap">
+			<match>
+				<action>
+					<initial>
+						<point event_duration_max=".2" translation_max="2"/>
+						<cluster point_number="2"/>
+						<event touch_event="gwTouchEnd"/>
+					</initial>
+				</action>
+			</match>	
+			<analysis>
+				<algorithm class="temporalmetric" type="discrete">
+					<library module="tap"/>
+					<returns>
+						<property id="tap_x" result="x"/>
+						<property id="tap_y" result="y"/>
+						<property id="tap_n" result="n"/>
+					</returns>
+				</algorithm>
+			</analysis>	
+			<mapping>
+				<update dispatch_type="discrete" dispatch_mode="batch" dispatch_interval="200">
+					<gesture_event  type="tap">
+						<property ref="tap_x"/>
+						<property ref="tap_y"/>
+						<property ref="tap_n"/>
+					</gesture_event>
+				</update>
+			</mapping>
 		</Gesture>																								
 
 		<Gesture id="acc-1-finger-double-tap" type="double_tap">

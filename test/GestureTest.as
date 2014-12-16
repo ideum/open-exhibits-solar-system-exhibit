@@ -1,8 +1,10 @@
 package 
 {	
+	import com.gestureworks.cml.accessibility.TapEvaluator;
 	import com.gestureworks.core.GestureWorks;
 	import com.gestureworks.core.TouchSprite;
 	import com.gestureworks.events.GWGestureEvent;
+	import com.gestureworks.events.GWTouchEvent;
 	import com.gestureworks.managers.TouchManager;
 	import flash.events.TimerEvent;
 	import flash.utils.getTimer;
@@ -31,23 +33,17 @@ package
 			ts.y = stage.stageHeight / 2 - 250;
 			addChild(ts);
 					
-			//ts.gestureList = {"acc-1-finger-swipe-left":true,"acc-1-finger-swipe-right":true, "acc-1-finger-tap":true, "acc-1-finger-double-tap":true, "acc-h-stroke":true, "acc-2-finger-swipe":true, "acc-2-finger-hold":true };
-			ts.gestureList = { "acc-1-finger-tap":true };
-			//ts.addEventListener(GWGestureEvent.SWIPE, onGesture);
-			ts.addEventListener(GWGestureEvent.TAP, onGesture);
-			//ts.addEventListener(GWGestureEvent.DOUBLE_TAP, onGesture);		
-			//ts.addEventListener(GWGestureEvent.STROKE_LETTER, onGesture);
-			//ts.addEventListener(GWGestureEvent.HOLD, onGesture);
+			ts.gestureList = {"acc-1-finger-swipe-left":true,"acc-1-finger-swipe-right":true, "acc-2-finger-hold":true, "acc-1-finger-tap":true, "acc-2-finger-tap":true, "acc-1-finger-double-tap":true };
+			ts.addEventListener(GWGestureEvent.SWIPE, onGesture);
+			ts.addEventListener(GWGestureEvent.HOLD, onGesture);
+			//ts.addEventListener(GWGestureEvent.TAP, onGesture);
+			new TapEvaluator(ts, onGesture);
 		}				
 		
 		private function onGesture(e:GWGestureEvent):void {
-			trace(e.value.id, e.value.n);
-			if (e.type == "hold") {
-				TouchManager.forceRelease(TouchSprite(e.target));
-			}
-			if (e.type == "tap") {
-				trace(e.value.tap_n);
-			}
+			trace(e.value.id);
 		}
+		
+		
 	}
 }

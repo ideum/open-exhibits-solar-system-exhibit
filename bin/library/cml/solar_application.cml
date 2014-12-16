@@ -27,6 +27,6 @@
 	<!-- Accessibility Layer -->	
 	<Include src="library/cml/accessibility/accessibility-defaults.cml"/>
 	<Include src="library/cml/accessibility/accessibility-nav.cml"/>	
-	<AccessibilityLayer rootNav="accessibility-nav" userCount="4"/>	
+	<AccessibilityLayer rootNav="accessibility-nav" userCount="2"/>	
 	
 </cml>
