@@ -7,8 +7,10 @@ package
 	import com.gestureworks.core.GestureWorks;
 	import com.greensock.easing.Linear;
 	import com.greensock.TweenLite;
+	import flash.display.GradientType;
 	import flash.display.Sprite;
 	import flash.events.KeyboardEvent;
+	import flash.geom.Matrix;
 	/**
 	 * OE Solar System Exhibit
 	 * @author Ideum
@@ -23,6 +25,7 @@ package
 		private var duration:Number; 
 		private var text:Text; 
 		private var tMask:Sprite; 
+		private var blendMask:Sprite; 
 		private var tween:TweenLite;
 		
 		private var index:int = 0;
@@ -68,28 +71,39 @@ package
 			tMask.x = -tMask.width / 2; 
 			tMask.y = -125;
 			
+			var mat:Matrix = new Matrix();
+			mat.createGradientBox(375, 190, -90 * (Math.PI / 180));
+			
+			blendMask = new Sprite();
+			blendMask.graphics.beginGradientFill(GradientType.LINEAR, [0x0, 0x0, 0x0, 0x0], [0, 1, 1, 0], [0, 80, 225, 255], mat);
+			blendMask.graphics.drawRect(0, 0, 375, 150);
+			blendMask.x = -blendMask.width/2;
+			blendMask.y = -125; 
+			blendMask.cacheAsBitmap = true; 
+			
 			text = new Text();
 			text.font = "OpenSansBold";
 			text.fontSize = 20;
-			text.width = tMask.width; 	
+			text.width = blendMask.width; 	
 			text.wordWrap = true; 
 			text.autosize = true; 
-			text.x = tMask.x;
+			text.x = blendMask.x;
 			text.toBitmap = true; 
+			text.cacheAsBitmap = true; 
 			
 			sphere.addChild(text);			
-			sphere.addChild(tMask);
+			sphere.addChild(blendMask);
 			
-			text.mask = tMask; 						
+			text.mask = blendMask; 						
 			
 			stage.addEventListener(KeyboardEvent.KEY_DOWN, function(e:KeyboardEvent):void {
 				if (e.keyCode == 13) {
 					if(tween){
 						tween.kill();
 					}
-					text.y = tMask.y + 25;
+					text.y = blendMask.y + 25;
 					text.str = speeches[index];
-					distance = (text.textHeight + 4 - tMask.height) + (text.y - tMask.y);		
+					distance = (text.textHeight + 4 - blendMask.height) + (text.y - blendMask.y);		
 					speak(text.str);
 					index = index == speeches.length-1 ? 0 : index + 1; 
 				}
