@@ -37,7 +37,7 @@ package
 			ts.addEventListener(GWGestureEvent.SWIPE, onGesture);
 			ts.addEventListener(GWGestureEvent.HOLD, onGesture);
 			//ts.addEventListener(GWGestureEvent.TAP, onGesture);
-			new TapEvaluator(ts, onGesture);
+			new TapEvaluator(ts, onGesture, 100);
 		}				
 		
 		private function onGesture(e:GWGestureEvent):void {
