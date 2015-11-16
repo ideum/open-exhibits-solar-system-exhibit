@@ -12,12 +12,13 @@
     <movie minorVersion="7" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="Flex 4.6.0, AIR 3.9;4.6.0, 3.9;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="..\..\gestureworks-flash-cml" />
-    <class path="..\..\gestureworks-flash-gml" />
+    <class path="..\gestureworks-flash-cml" />
+    <class path="..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
