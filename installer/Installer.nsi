@@ -1,5 +1,5 @@
 ;UPDATE NAME ATTRIBUTE TO MATCH THE NAME OF THE FD PROJECT
-!define NAME "Solar"  ;Assign project name w/out spaces
+!define NAME "CMME"  ;Assign project name w/out spaces
 
 ;--------------SETUP-------------------
 ;Include Modern UI

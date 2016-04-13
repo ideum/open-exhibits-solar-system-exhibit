@@ -1,6 +1,5 @@
 package 
 {
-	import com.gestureworks.cml.accessibility.AccessibilityLayer;
 	import com.gestureworks.cml.core.CMLParser;
 	import com.gestureworks.core.GestureWorks;
 	import flash.events.Event;
