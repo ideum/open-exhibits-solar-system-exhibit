@@ -12,12 +12,13 @@
     <movie minorVersion="7" />
     <movie platform="Flash Player" />
     <movie background="#FFFFFF" />
+    <movie preferredSDK="Flex 4.6.0, AIR 19.0;4.6.0, 19.0;" />
   </output>
   <!-- Other classes to be compiled into your SWF -->
   <classpaths>
     <class path="src" />
-    <class path="src\oe\gestureworks-flash-cml" />
-    <class path="src\oe\gestureworks-flash-gml" />
+    <class path="..\gestureworks-flash-cml" />
+    <class path="..\gestureworks-flash-gml" />
   </classpaths>
   <!-- Build options -->
   <build>
@@ -65,6 +66,9 @@
     <element path="src\oe\gestureworks-flash-cml\lib\gui.swc" />
     <element path="src\oe\gestureworks-flash-cml\lib\cml_ext.swc" />
     <element path="src\oe\gestureworks-flash-gml\lib\gml_ext.swc" />
+    <element path="..\gestureworks-flash-cml\lib\cml_ext.swc" />
+    <element path="..\gestureworks-flash-cml\lib\gui.swc" />
+    <element path="..\gestureworks-flash-gml\lib\gml_ext.swc" />
   </libraryPaths>
   <!-- External Libraries -->
   <externalLibraryPaths>
